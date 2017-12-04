@@ -9,7 +9,7 @@ class Nullable {
 
     private fun  showCase1(){
         //1) Una llamada explícita al error NullPointerException
-        throw NullPointerException();
+        throw NullPointerException()
     }
     private fun  showCase2(var1:String?){
         //Uso del operador !!

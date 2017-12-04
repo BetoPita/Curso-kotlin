@@ -20,14 +20,14 @@ class Operators {
     }
 
     private fun  showCase3(){
-        val pn1 = PersonEqualOverride();
-        val pn2 = PersonEqualOverride();
+        val pn1 = PersonEqualOverride()
+        val pn2 = PersonEqualOverride()
         Log.w("Operators-3","Referential equality. es 'pn1' igual a 'pn2'? ${pn1===pn2}") //false
         Log.w("Operators-3","Structural equality. es 'pn1' igual a 'pn2'? ${pn1==pn2}") // true
     }
     private fun  showCase4(){
-        val pn1 = PersonDataClass();
-        val pn2 = PersonDataClass();
+        val pn1 = PersonDataClass()
+        val pn2 = PersonDataClass()
         val pn3 = PersonDataClass("Roberto");
         Log.w("Operators-4","Referential equality. es 'pn1' igual a 'pn2'? ${pn1===pn2}") //false
         Log.w("Operators-4","Structural equality. es 'pn1' igual a 'pn2'? ${pn1==pn2}") // true

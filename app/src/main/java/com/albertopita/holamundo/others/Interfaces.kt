@@ -25,8 +25,8 @@ open class Interfaces {
         aoii.propertyAbstract
     }
     fun showCases(){
-        showCase1();
-        showCase2();
+        showCase1()
+        showCase2()
     }
 }
 interface Interface1{
