@@ -71,9 +71,9 @@ class Functions {
     }
     private fun  showCase5(){
         //Variable number of arguments (Varargs)
-        /*fun SumaAll(vararg numbers:Int) = numbers.sum()
+        fun SumaAll(vararg numbers:Int) = numbers.sum()
 
-        val result = SumaAll(1,2,3,4,5,6,7,8,9,10) */
+        val result = SumaAll(1,2,3,4,5,6,7,8,9,10)
     }
     private fun  showCase6(){
         //Extension function
