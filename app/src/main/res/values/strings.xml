@@ -9,4 +9,20 @@
     <string name="button_to_permissions">7. To Permissions</string>
     <string name="button_to_shared_preferences">8. To Shared Preferences</string>
     <string name="button_to_extension_functions">9. To Entensions Functions</string>
+
+    <string name="button_click_xml">Click by XML</string>
+    <string name="button_click_line">Click In Line</string>
+    <string name="button_click_multi_1">Multiple Button 1</string>
+    <string name="button_click_multi_2">Multiple Button 2</string>
+    <string name="button_click_multi_3">Multiple Button 3</string>
+
+    <string name="button_KAT_ID">BUTTON BY FINDVIEWBYID</string>
+    <string name="button_by_kat">BUTTON BY KAT</string>
+
+    <string name="button_intent_extras">Intent with extras</string>
+    <string name="button_intent_flags">Intent with Flags</string>
+    <string name="button_intent_object">Intent with Object</string>
+
+    <string name="button_back">Go back</string>
+
 </resources>
