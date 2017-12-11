@@ -25,4 +25,6 @@
 
     <string name="button_back">Go back</string>
 
+    <string name="button_takepicture">Take a Picture</string>
+
 </resources>

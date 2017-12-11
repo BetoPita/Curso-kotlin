@@ -1,9 +1,10 @@
-package com.albertopita.holamundo
+package com.albertopita.holamundo.others
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Toast
+import com.albertopita.holamundo.R
 
 class LifeCycleActivity : AppCompatActivity() {
     private var exitEnable = false

@@ -7,13 +7,14 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.albertopita.holamundo.models.Person
+import com.albertopita.holamundo.others.inflate
 import kotlinx.android.synthetic.main.list_view_person.view.*
 
 /**
  * Created by pita on 05/12/17.
  */
 class PersonAdapter(val context: Context, val layout:Int, val list: List<Person>):BaseAdapter(){
-    private val mInflator :LayoutInflater = LayoutInflater.from(context)
+    //private val mInflator :LayoutInflater = LayoutInflater.from(context)
 
     override fun getItem(position: Int): Any {
         //que item regresar
@@ -35,7 +36,8 @@ class PersonAdapter(val context: Context, val layout:Int, val list: List<Person>
 
         //convertView representa cada fila del listView
         if(convertView==null){
-            view = mInflator.inflate(layout,parent,false)
+            //view = mInflator.inflate(layout,parent,false) // antes de las extension
+            view = parent!!.inflate(layout)
             //instancia del viewHolder
             vh = PersonViewHolder(view)
             view.tag = vh //tag inyecta un objeto

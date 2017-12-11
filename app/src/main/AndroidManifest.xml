@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,9 +30,14 @@
         <activity android:name=".PermissionsActivity" />
         <activity android:name=".SharedPreferencesActivity" />
         <activity android:name=".ExtensionFunctionsActivity" />
-        <activity android:name=".LifeCycleActivity" />
+        <activity android:name=".others.LifeCycleActivity" />
         <activity android:name=".ClickEventsActivity" />
-        <activity android:name=".activities.IntentExtrasActivity"></activity>
+        <activity android:name=".activities.IntentExtrasActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data>
+        </activity>
+        <activity android:name=".others.ToolbarActivity"></activity>
     </application>
 
 </manifest>

@@ -1,28 +1,23 @@
 package com.albertopita.holamundo
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.design.widget.Snackbar
 import android.support.v7.widget.Toolbar
-import android.view.View
 import android.widget.Button
 import android.widget.Toast
-import com.albertopita.holamundo.others.ControlFlow
-import com.albertopita.holamundo.others.Nullable
-import com.albertopita.holamundo.others.Operators
-import com.albertopita.holamundo.others.Variables
+import com.albertopita.holamundo.others.*
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var toolbar:Toolbar
+class MainActivity : ToolbarActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        toolbar = findViewById(R.id.toolbar)
-
-        setSupportActionBar(toolbar)
+        toolbarToLoad(toolbar as Toolbar)
 
         val btnLifeCycle = findViewById<Button>(R.id.button_to_cycle)
         val btnClickEvents = findViewById<Button>(R.id.button_to_click)
@@ -58,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         }.show()
     }
 
-    private fun goToLifeCycleActivity() =  startActivity(Intent(this,LifeCycleActivity::class.java))
+    private fun goToLifeCycleActivity() =  startActivity(Intent(this, LifeCycleActivity::class.java))
     private fun goToClickEventActivity() =  startActivity(Intent(this,ClickEventsActivity::class.java))
 
 
